@@ -35,6 +35,25 @@ public class Fifth {
         String two = "2";
         int y3 = Integer.parseInt(two) + 2;
         System.out.println(y3);
+        // Math class
+        int num = Math.round(1.1F);
+        System.out.println(num); // 1
+        int ceiling = (int) Math.ceil(1.1F);
+        System.out.println(ceiling); // 2
+        int flooring = (int) Math.floor(1.1F);
+        System.out.println(flooring); // 1
+
+        int comparing = Math.max(1, 2);
+        System.out.println(comparing); // 2
+        // random method gives back a double and we want to avoid compilation errors
+        double random_num = Math.random();
+        System.out.println(random_num); // everytime we get a random number between 0 and 1 and if we multiply it by 100
+                                        // we get a random no. between 0 and 100
+        double random_num1 = Math.random() * 100;
+        System.out.println(random_num1);
+        // to get a random number that is an integer between 0 and 100
+        int random_int = (int) (Math.random() * 100);
+        System.out.println(random_int);
 
     }
 }
